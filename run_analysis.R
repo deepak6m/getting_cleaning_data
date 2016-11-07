@@ -56,10 +56,10 @@ combinedSet <- merge(combinedSet, activityLabels, by='activity_id', all.x=TRUE)
 # Label the dataset with descriptive variables
 names(combinedSet)
 #prefix 't' to denote time
-#Acc accelerometer 
-#Gyro gyroscope
-#Mag Magnitude
-#'f' frequency domain signals
+#Acc for Accelerometer 
+#Gyro for Gyroscope
+#Mag for Magnitude
+#prefix 'f' for frequency domain signals
 names(combinedSet) <- gsub("^t","time",names(combinedSet))
 names(combinedSet) <- gsub("^f","frequency",names(combinedSet))
 names(combinedSet) <- gsub("Acc", "Accelerometer",names(combinedSet))
